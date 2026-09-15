@@ -46,7 +46,7 @@ export default tsPlugin.config(
             parser: tsPlugin.parser,
             parserOptions: {
                 projectService: true,
-                tsconfigRootDir: import.meta.dirname,
+                tsconfigRootDir: process.cwd(),
             },
         },
 
